@@ -1,6 +1,6 @@
 FROM docker.io/openmpi/openmpi:latest
 WORKDIR /app
-COPY main_openmpi.c /app
+COPY ./main_openmpi.c /app
 COPY ../web-Google.txt.gz /app
 
 RUN apt-get update && apt-get install -y zlib1g-dev && \
