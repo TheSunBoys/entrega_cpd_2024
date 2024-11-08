@@ -1,0 +1,12 @@
+version: '3'
+services:
+  pthreads:
+    build: ./01-pthreads
+    container_name: pthreads_container
+  openmp:
+    build: ./02-openmp
+    container_name: openmp_container
+  openmpi:
+    build: ./03-openmpi
+    container_name: openmpi_container
+
