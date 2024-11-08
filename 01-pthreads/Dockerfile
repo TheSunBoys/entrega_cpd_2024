@@ -1,4 +1,4 @@
-FROM gcc:latest
+FROM docker.io/gcc:latest
 WORKDIR /app
 COPY main_pthreads.c /app
 COPY ../web-Google.txt.gz /app
